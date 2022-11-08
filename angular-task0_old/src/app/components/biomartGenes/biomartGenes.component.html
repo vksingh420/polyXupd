@@ -1,0 +1,39 @@
+<div>
+  <div class="search-form">
+    <div *ngIf="!submitted">
+      <div>
+        <mat-form-field appearance="fill">
+          <mat-label>Enter gene prefix...</mat-label>
+          <input matInput placeholder="Enter gene prefix..."
+          autocomplete="off"
+          type="text"
+          id="name"
+          required
+          [(ngModel)]="biomart.prefix"
+          name="name" >
+        </mat-form-field>
+      </div>
+
+      <button (click)="searchPrefix()" class="btn btn-success">Search</button>
+    </div>
+
+    <div *ngIf="submitted">
+      <h6>{{"biomart Gene Positions: " + biomart.prefix}}</h6>
+
+      <!-- Try to draw line with d3.js-->
+
+      <h2>D3.js Genome</h2>
+
+      <body>
+
+      </body>
+
+
+      <button class="btn btn-success" (click)="newPrefix()">Search</button>
+    </div>
+</div>
+
+
+
+
+
