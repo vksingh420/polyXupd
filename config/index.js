@@ -8,7 +8,7 @@ var config = {
     app: {
       name: 'polyAdb'
     },
-    port: 3013
+    port: 3008
   },
 
   production: {
